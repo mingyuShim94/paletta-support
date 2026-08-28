@@ -1,98 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paletta Privacy Policy</title>
+    <meta name="description" content="色名ミス復習（Paletta）のプライバシーポリシーです。端末内データ、PostHog、Firebase、広告に関する取り扱いを説明します。">
+    <title>色名ミス復習（Paletta）プライバシーポリシー</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1d1d1f; background: #f5f5f7; line-height: 1.6; }
-        .container { max-width: 680px; margin: 0 auto; padding: 40px 20px; }
-        h1 { font-size: 2rem; margin-bottom: 8px; }
-        .subtitle { color: #6e6e73; margin-bottom: 40px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; color: #211f1b; background: #f7f4ef; line-height: 1.7; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2rem; line-height: 1.3; margin-bottom: 8px; }
+        .subtitle { color: #5f5a52; margin-bottom: 40px; }
         h2 { font-size: 1.3rem; margin: 32px 0 12px; }
         p { margin-bottom: 12px; }
         ul { margin: 0 0 12px 24px; }
-        li { margin-bottom: 6px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { text-align: center; color: #6e6e73; font-size: 0.85rem; margin-top: 40px; }
+        li { margin-bottom: 7px; }
+        a { color: #24564d; text-decoration: underline; text-underline-offset: 3px; }
+        footer { text-align: center; color: #625d55; font-size: 0.85rem; margin-top: 40px; }
         nav { margin-bottom: 32px; font-size: 0.9rem; }
         nav a { margin-right: 16px; }
-        .highlight { background: #fff; border-radius: 12px; padding: 24px; margin: 24px 0; }
+        .highlight { background: #fffdf9; border: 1px solid #c7beb2; border-left: 5px solid #2e6258; border-radius: 14px; padding: 24px; margin: 24px 0; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="index.html">Support</a>
-            <a href="privacy.html">Privacy Policy</a>
+    <main class="container">
+        <nav aria-label="ページナビゲーション">
+            <a href="index.html">サポート</a>
+            <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
         </nav>
 
-        <h1>Privacy Policy</h1>
-        <p class="subtitle">Paletta - Color Palette Maker<br>Last updated: February 23, 2026</p>
+        <h1>プライバシーポリシー</h1>
+        <p class="subtitle">色名ミス復習（Paletta）<br>最終更新日：2026年8月28日</p>
 
-        <div class="highlight">
-            <p><strong>Paletta does not collect any personally identifiable information.</strong> Your color palettes and photos are processed entirely on your device and never leave it.</p>
-        </div>
+        <section class="highlight">
+            <p><strong>学習内容は端末内に保存されます。</strong></p>
+            <p>回答した色名、正誤、間違えた回数、ブックマーク、進捗、途中のラウンドを、当社が分析サービスへ送信することはありません。アカウント登録もありません。</p>
+        </section>
 
-        <h2>Overview</h2>
-        <p>Paletta ("the App") is developed by gguggulab. We are committed to protecting your privacy. This policy explains how we handle information when you use our App.</p>
+        <h2>1. 本ポリシーについて</h2>
+        <p>gguggulab（以下「当社」）は、色名ミス復習（以下「本アプリ」）を提供しています。本ポリシーは、本アプリで取り扱う情報と利用目的を説明するものです。</p>
 
-        <h2>Data We Do Not Collect</h2>
-        <p>Paletta does <strong>not</strong> collect:</p>
+        <h2>2. 端末内に保存する情報</h2>
+        <p>本アプリは、次の情報を利用者の端末内に保存します。</p>
         <ul>
-            <li>Personal information (name, email, phone number, etc.)</li>
-            <li>Photos or images you use within the App</li>
-            <li>Color palettes or any user-created content</li>
-            <li>Location data</li>
-            <li>Cookies or advertising identifiers</li>
+            <li>回答済みの問題と64色の進捗</li>
+            <li>間違えた色、間違えた回数、ブックマーク</li>
+            <li>途中のラウンドと選択肢の順序</li>
+            <li>完了したラウンド数などの学習状態</li>
+        </ul>
+        <p>これらは復習、途中再開、進捗表示のために使用します。通常は本アプリを削除すると端末から削除されます。</p>
+
+        <h2>3. PostHogによる匿名の利用状況分析</h2>
+        <p>本アプリは、機能改善と不具合の把握に必要な最小限の利用状況をPostHogへ送信することがあります。氏名、メールアドレス、回答内容、色名、正誤、点数、自由入力、エラー本文は送信しません。</p>
+        <p>送信対象は次の5種類に限定しています。</p>
+        <ul>
+            <li>初回起動</li>
+            <li>起動、または30分以上の中断後の再開</li>
+            <li>ラウンド完了とラウンド種別</li>
+            <li>ラウンド完了後に広告表示の条件を満たしたこと</li>
+            <li>実際にインタースティシャル広告が表示されたこと</li>
+        </ul>
+        <p>これらには、ランダムな匿名識別子、アプリのバージョン、イベント仕様のバージョン、起動種別、ラウンド種別、広告形式・表示位置が付随することがあります。PostHogでは個人プロファイル、セッションリプレイ、自動ライフサイクル収集、プッシュ通知イベント、アプリログ、エラー・クラッシュ収集を無効にし、IPアドレスによる位置情報付加も無効にしています。ただし、通信の成立やセキュリティのために、通信事業者やサービス提供者がIPアドレス等を一時的に処理する場合があります。</p>
+
+        <h2>4. Firebase</h2>
+        <p>有効化されたバージョンでは、Google Firebase AnalyticsおよびFirebase Crashlyticsを、利用状況の集計とクラッシュの診断に使用することがあります。端末・アプリの情報、利用イベント、クラッシュ時の技術情報が処理される場合があります。当社は回答した色名や学習内容をFirebaseへ意図的に送信しません。</p>
+
+        <h2>5. 広告</h2>
+        <p>広告が有効なバージョンでは、Google Mobile Adsを使用して非パーソナライズ広告を表示します。広告配信、頻度制御、不正利用防止、効果測定のため、端末情報、IPアドレス、広告に関する操作や識別子等が、端末の設定およびGoogleの方針に従って処理される場合があります。本アプリは学習結果が表示される前に広告を表示しません。</p>
+
+        <h2>6. 取得しない情報と端末権限</h2>
+        <p>本アプリは、氏名、メールアドレス、電話番号、連絡先、正確な位置情報、写真、カメラ映像を取得しません。現在の色名学習機能は、カメラ、写真、位置情報、連絡先へのアクセス権限を要求しません。</p>
+
+        <h2>7. 利用目的</h2>
+        <ul>
+            <li>学習進捗、復習、途中再開機能の提供</li>
+            <li>利用状況の集計と機能改善</li>
+            <li>不具合、クラッシュ、広告配信上の問題の診断</li>
+            <li>広告が有効な場合の広告配信と効果測定</li>
         </ul>
 
-        <h2>Analytics Data</h2>
-        <p>Paletta uses <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> (provided by Google) to help us improve the App. These services may collect:</p>
+        <h2>8. 第三者サービスと国外処理</h2>
+        <p>第三者サービスへ送信された情報は、日本国外を含む地域で処理される場合があります。詳細は各サービスの方針をご確認ください。</p>
         <ul>
-            <li><strong>Device identifiers</strong> — anonymous identifiers to distinguish unique app installations</li>
-            <li><strong>Product interaction data</strong> — which screens are viewed and features used (no personal content)</li>
-            <li><strong>Crash data</strong> — technical information about app crashes to help us fix bugs</li>
-        </ul>
-        <p>This data is collected anonymously and cannot be used to identify you personally. It is used solely for improving app stability and user experience.</p>
-
-        <h2>How the App Works</h2>
-        <p>All color palette creation and photo color extraction is performed entirely on your device. The App:</p>
-        <ul>
-            <li>Accesses your photo library only when you explicitly choose to extract colors from a photo</li>
-            <li>Accesses your camera only when you choose to capture a photo for color extraction</li>
-            <li>Stores your palettes locally on your device</li>
+            <li><a href="https://posthog.com/privacy" rel="noopener noreferrer">PostHog Privacy Policy</a></li>
+            <li><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Google Firebase Privacy and Security</a></li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a></li>
         </ul>
 
-        <h2>Photo Library & Camera Access</h2>
-        <p>The App requests access to your photo library and camera solely for the purpose of extracting colors from images. These permissions are optional and requested only when needed. No images are transmitted off your device.</p>
+        <h2>9. 保存期間と削除</h2>
+        <p>端末内の学習情報は、本アプリの利用中または削除されるまで保存されます。第三者サービスへ送信された匿名の分析・診断・広告情報は、各サービスの設定および方針に従って保存されます。削除に関するご相談は、下記の連絡先へお問い合わせください。</p>
 
-        <h2>Data Storage</h2>
-        <p>Your color palettes and app preferences are stored locally on your device. This data is automatically removed when you delete the App.</p>
+        <h2>10. 子どものプライバシー</h2>
+        <p>当社は、本アプリを通じて子どもの個人情報を意図的に収集しません。保護者の方が問題にお気づきの場合は、下記の連絡先へご連絡ください。</p>
 
-        <h2>Third-Party Services</h2>
-        <p>Paletta uses the following third-party services:</p>
-        <ul>
-            <li><strong>Firebase Analytics</strong> (Google) — anonymous usage analytics. <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
-            <li><strong>Firebase Crashlytics</strong> (Google) — crash reporting. <a href="https://firebase.google.com/support/privacy">Firebase Privacy Policy</a></li>
-        </ul>
+        <h2>11. 本ポリシーの変更</h2>
+        <p>機能、利用するサービス、法令等の変更に応じて本ポリシーを更新する場合があります。重要な変更がある場合は、このページで最終更新日とともにお知らせします。</p>
 
-        <h2>Children's Privacy</h2>
-        <p>The App does not knowingly collect personal data from children under 13. The anonymous analytics data collected applies equally to all users regardless of age.</p>
-
-        <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
-
-        <h2>Contact</h2>
-        <p>If you have questions about this privacy policy, please contact us at:</p>
+        <h2>12. お問い合わせ</h2>
+        <p>本ポリシーまたは情報の取り扱いに関するお問い合わせ：</p>
         <p>Email: <a href="mailto:gguggulab@gmail.com">gguggulab@gmail.com</a></p>
 
         <footer>
             <p>&copy; 2026 gguggulab. All rights reserved.</p>
-            <p><a href="index.html">Support</a></p>
+            <p><a href="index.html">サポートへ戻る</a></p>
         </footer>
-    </div>
+    </main>
 </body>
 </html>

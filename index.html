@@ -1,81 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paletta Support</title>
+    <meta name="description" content="色名ミス復習（Paletta）のサポートページです。慣用色名64色の学習、間違えた色の復習、進捗保存についてご案内します。">
+    <title>色名ミス復習（Paletta）サポート</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1d1d1f; background: #f5f5f7; line-height: 1.6; }
-        .container { max-width: 680px; margin: 0 auto; padding: 40px 20px; }
-        h1 { font-size: 2rem; margin-bottom: 8px; }
-        .subtitle { color: #6e6e73; margin-bottom: 40px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; color: #211f1b; background: #f7f4ef; line-height: 1.7; }
+        .container { max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+        h1 { font-size: 2rem; line-height: 1.3; margin-bottom: 8px; }
+        .subtitle { color: #5f5a52; margin-bottom: 40px; }
         h2 { font-size: 1.3rem; margin: 32px 0 16px; }
-        .card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+        .notice, .card { background: #fffdf9; border: 1px solid #c7beb2; border-radius: 14px; padding: 24px; margin-bottom: 16px; }
+        .notice { border-left: 5px solid #2e6258; }
         .card h3 { font-size: 1rem; margin-bottom: 8px; }
-        .card p { color: #6e6e73; font-size: 0.95rem; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .contact { background: #E92063; color: #fff; border-radius: 12px; padding: 24px; margin-top: 32px; }
+        .card p { color: #514c45; font-size: 0.95rem; }
+        a { color: #24564d; text-decoration: underline; text-underline-offset: 3px; }
+        .contact { background: #2e6258; color: #fff; border-radius: 14px; padding: 24px; margin-top: 32px; }
         .contact h2 { color: #fff; margin-top: 0; }
         .contact a { color: #fff; font-weight: 600; }
-        footer { text-align: center; color: #6e6e73; font-size: 0.85rem; margin-top: 40px; }
+        footer { text-align: center; color: #625d55; font-size: 0.85rem; margin-top: 40px; }
         nav { margin-bottom: 32px; font-size: 0.9rem; }
         nav a { margin-right: 16px; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <a href="index.html">Support</a>
-            <a href="privacy.html">Privacy Policy</a>
+    <main class="container">
+        <nav aria-label="ページナビゲーション">
+            <a href="index.html" aria-current="page">サポート</a>
+            <a href="privacy.html">プライバシーポリシー</a>
         </nav>
 
-        <h1>Paletta Support</h1>
-        <p class="subtitle">Color Palette Maker</p>
+        <h1>色名ミス復習（Paletta）</h1>
+        <p class="subtitle">慣用色名64色を、間違えた色から復習する学習アプリ</p>
 
-        <h2>Frequently Asked Questions</h2>
+        <section class="notice">
+            <strong>非公式の学習アプリです。</strong>
+            <p>公開資料と照合した独自の学習データを使用しています。画面上の色は表示環境によって異なるため、参考表示としてご利用ください。</p>
+        </section>
 
-        <div class="card">
-            <h3>How do I create a color palette?</h3>
-            <p>Open Paletta, go to the Create tab, and tap the color slots to pick colors using the color wheel. You can also extract colors from photos using the camera icon.</p>
-        </div>
+        <h2>よくある質問</h2>
 
-        <div class="card">
-            <h3>How do I extract colors from a photo?</h3>
-            <p>In the Create tab, tap the camera icon to take a photo or select one from your library. Paletta will automatically extract the dominant colors from the image.</p>
-        </div>
+        <section class="card">
+            <h3>どのように学習しますか？</h3>
+            <p>「今日の10問」では、表示された色に合う慣用色名を4つの選択肢から選びます。回答後すぐに正誤、読み方または原語、覚えるための短いヒントを確認できます。</p>
+        </section>
 
-        <div class="card">
-            <h3>Can I copy hex codes?</h3>
-            <p>Yes! Tap any color in your palette to see its hex code, RGB values, and more. Tap the hex code to copy it to your clipboard instantly.</p>
-        </div>
+        <section class="card">
+            <h3>間違えた色だけ復習できますか？</h3>
+            <p>はい。間違えた色は端末内の復習リストに保存され、「間違えた色」から繰り返し学習できます。覚えておきたい色はブックマークにも追加できます。</p>
+        </section>
 
-        <div class="card">
-            <h3>Where are my palettes saved?</h3>
-            <p>All palettes are saved locally on your device in the My Palettes tab. They are stored securely and never uploaded to any server.</p>
-        </div>
+        <section class="card">
+            <h3>64色を重複なく学習できますか？</h3>
+            <p>「64色を一周」では、現在の一周が完了するまで回答済みの色を除外します。進み具合は端末内に保存され、中断したラウンドは次回起動時に続きから再開できます。</p>
+        </section>
 
-        <div class="card">
-            <h3>Does Paletta require an internet connection?</h3>
-            <p>No. Paletta works completely offline. All color picking and palette creation happens on your device.</p>
-        </div>
+        <section class="card">
+            <h3>学習履歴をリセットするには？</h3>
+            <p>64色の進捗がある場合は、ホーム画面の「完了進捗をリセット」から確認後に現在の一周を0/64へ戻せます。間違えた色、ブックマーク、完了回数はそのまま残ります。</p>
+        </section>
 
-        <div class="card">
-            <h3>Is Paletta free?</h3>
-            <p>Yes. Paletta is completely free with no subscriptions, no watermarks, and no hidden fees.</p>
-        </div>
+        <section class="card">
+            <h3>カメラや写真へのアクセスは必要ですか？</h3>
+            <p>必要ありません。現在の色名学習機能はカメラ、写真、位置情報、連絡先へのアクセスを要求しません。</p>
+        </section>
 
-        <div class="contact">
-            <h2>Contact Us</h2>
-            <p>Have a question or feedback? We'd love to hear from you.</p>
+        <section class="card">
+            <h3>インターネット接続は必要ですか？</h3>
+            <p>問題への回答、復習リスト、ブックマーク、進捗保存は端末内で動作します。利用状況の匿名分析、クラッシュ報告、広告が有効なバージョンでは、それらの通信にインターネット接続を使用することがあります。</p>
+        </section>
+
+        <section class="card">
+            <h3>広告はいつ表示されますか？</h3>
+            <p>広告が有効なバージョンでも、最初の学習結果が出る前には表示しません。ラウンド完了後に次の操作へ進むときのみ、一定の間隔を空けてインタースティシャル広告が表示されることがあります。</p>
+        </section>
+
+        <section class="contact">
+            <h2>お問い合わせ</h2>
+            <p>不具合、ご質問、ご意見はメールでお知らせください。</p>
             <p style="margin-top: 12px;">Email: <a href="mailto:gguggulab@gmail.com">gguggulab@gmail.com</a></p>
-        </div>
+        </section>
 
         <footer>
             <p>&copy; 2026 gguggulab. All rights reserved.</p>
-            <p><a href="privacy.html">Privacy Policy</a></p>
+            <p><a href="privacy.html">プライバシーポリシー</a></p>
         </footer>
-    </div>
+    </main>
 </body>
 </html>
